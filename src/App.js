@@ -4,7 +4,6 @@ import SingleColor from './SingleColor';
 
 const App = () => {
   const[color,setColor] = useState('')
-  const[isError,setIsError] = useState(false);
   const[list,setList] =useState(new Values('#1c2042').all(10));
 
   const submitHandler = (e)=>{
@@ -13,7 +12,6 @@ const App = () => {
       let colors = new Values(color).all(10);
       setList(colors);
     }catch(error){
-      setIsError(true);
       console.log(error);
     }
   }

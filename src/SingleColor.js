@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 
 const SingleColor = ({rgb,weight,index,hexColor}) => {
   let hexValue = '#' + hexColor;
